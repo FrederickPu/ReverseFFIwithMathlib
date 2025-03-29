@@ -24,6 +24,7 @@ lean_lib «reverseffiwithmathlib» where
       "-L.lake/packages/Qq/.lake/build/lib/", "-lQq",
       "-L.lake/packages/batteries/.lake/build/lib/", "-lBatteries",
       "-L.lake/packages/LeanSearchClient/.lake/build/lib/", "-lLeanSearchClient",
+      "-L.lake/packages/Plausible/.lake/build/lib/", "-lPlausible",
       "-lLake", "-lLean"]
 
 require mathlib from git "https://github.com/leanprover-community/mathlib4" @ "master"

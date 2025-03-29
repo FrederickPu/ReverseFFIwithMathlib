@@ -2,6 +2,7 @@
 #include <lean/lean.h>
 
 extern "C" double min_number(size_t, size_t, size_t);
+extern "C" int io_test();
 
 extern "C" void lean_initialize_runtime_module();
 extern "C" void lean_initialize();
@@ -25,6 +26,8 @@ int main(){
 
     
     std::cout << "minimal number of 42 7 69 is: " << min_number(42, 7, 69) << std::endl;
+
+    io_test();
 
     return 0;
 }
